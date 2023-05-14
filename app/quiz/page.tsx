@@ -6,7 +6,7 @@ import { useAppContext } from "@/context/context";
 import { CorrectAnswer, IncorrectAnswer } from "@/components/Modal";
 import Link from "next/link";
 
-const page = () => {
+const Quizpage = () => {
   const [guess, setGuess] = useState<string>("");
 
   const { setIncorrectModalOpen, setCorrectModalOpen, softTrigger } =
@@ -89,4 +89,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Quizpage;
